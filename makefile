@@ -38,8 +38,8 @@ $(MAIN_OUT_BIN): $(MAIN_OUT_ELF)
 
 # flash
 flash: all
-	openocd -f jtag/openocd.cfg -c "program main.bin 0x08000000 verify reset exit"
-
+#	openocd -f jtag/openocd.cfg -c "program main.bin 0x08000000 verify reset exit"
+	st-flash write $(MAIN_OUT_BIN) 0x8000000
 
 # libstm32.a
 LIBSTM32_OUT = lib/libstm32.a
