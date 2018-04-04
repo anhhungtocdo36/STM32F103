@@ -19,6 +19,7 @@ sudo cp etc/udev/rules.d/49-stlinkv* /etc/udev/rules.d/
 #and restart udev
 sudo restart udev
 ```
+
 ## Flashing target
 
 Install gcc cross compiler
